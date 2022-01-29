@@ -1,2 +1,2 @@
 # PruebaPrimeStone
-Prueba Técnica PrimeStone
+ PruebaPrimeStone
