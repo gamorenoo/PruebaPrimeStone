@@ -43,10 +43,6 @@ namespace PruebaPrimeStone.Estudiantes.Api
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             });
 
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "PruebaPrimeStone.Estudiantes.Api", Version = "v1" });
-            //});
 
             ConfigSwagger(services);
 
@@ -115,7 +111,7 @@ namespace PruebaPrimeStone.Estudiantes.Api
                     {
                         Name = "Prueba tecnica PrimeStone",
                         Email = "gustavoamoreno@outlook.com",
-                        //Url = new Uri("https://github.com/tavo87/AdminUserApi/"),
+                        Url = new Uri("https://github.com/tavo87/PruebaPrimeStone/"),
                     }
                 });
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
