@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PruebaPrimeStone.Estudiantes.Api</name>
+    </assembly>
+    <members>
+        <member name="F:PruebaPrimeStone.Estudiantes.Api.AplicationServices.CursoAppService._cursoRepository">
+            <summary>
+            Servicio de repositorio para persistencia de cursos
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.CursoAppService.#ctor(PruebaPrimeStone.Estudiantes.Repository.Repository.CursoRepository)">
+            <summary>
+            Constructor de la clase
+            </summary>
+            <param name="cursoRepository"></param>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.CursoAppService.Save(Common.DTOs.CursoDTO)">
+            <summary>
+            Realiza la creacion o actualizacion de un curso
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.CursoAppService.Get">
+            <summary>
+            Obtiene una lista de cursos
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.CursoAppService.Get(System.Int32)">
+            <summary>
+            Obtiene un curso por su id
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.CursoAppService.Delete(System.Int32)">
+            <summary>
+            Elimina un curso
+            </summary>
+        </member>
+        <member name="F:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService._mapper">
+            <summary>
+            Mapper
+            </summary>
+        </member>
+        <member name="F:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService._estudianteRepository">
+            <summary>
+            Servicio de repositorio para persistencia de estudiantes
+            </summary>
+        </member>
+        <member name="F:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService._direccionRepository">
+            <summary>
+            Servicio de repositorio para persistencia de direcciones
+            </summary>
+        </member>
+        <member name="F:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService._cursoRepository">
+            <summary>
+            Servicio de repositorio para persistencia de cuross
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService.#ctor(AutoMapper.IMapper,PruebaPrimeStone.Estudiantes.Repository.Repository.EstudianteRepository,PruebaPrimeStone.Estudiantes.Repository.Repository.DireccionRepository,PruebaPrimeStone.Estudiantes.Repository.Repository.CursoRepository)">
+            <summary>
+            Constructor de la clase
+            </summary>
+            <param name="mapper"></param>
+            <param name="estudianteRepository"></param>
+            <param name="direccionRepository"></param>
+            <param name="cursoRepository"></param>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService.Save(Common.DTOs.EstudianteDTO)">
+            <summary>
+            Realiza la creacion o actualizacion de un estudiante
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService.Get">
+            <summary>
+            Obtiene una lista de estudiantes
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService.Get(System.Int32)">
+            <summary>
+            Obtiene un estudiante por su id
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService.Cursos(System.Int32)">
+            <summary>
+            Obtiene los curos de estudiante
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService.Delete(System.Int32)">
+            <summary>
+            Elimina estudiantes
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService.Matricular(Common.DTOs.EstudianteCursoDTO)">
+            <summary>
+            Realiza la creacion o actualizacion de un estudiante
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.BackGroundServices.TestHostedService.#ctor(System.IServiceProvider)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="doWorkRepository"></param>
+        </member>
+        <member name="F:PruebaPrimeStone.Estudiantes.Api.Controllers.CursoController._cursoAppService">
+            <summary>
+            Servicio de aplicacion para administracion estudiantes
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.CursoController.#ctor(PruebaPrimeStone.Estudiantes.Api.AplicationServices.CursoAppService,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="cursoAppService"></param>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.CursoController.save(Common.DTOs.CursoDTO)">
+            <summary>
+            Crea o actualiza un curso
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.CursoController.Get">
+            <summary>
+            Obtiene una lista de cursos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.CursoController.Get(System.Int32)">
+            <summary>
+            Obtiene un curso por su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.CursoController.Delete(System.Int32)">
+            <summary>
+            Elimina un Curso
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:PruebaPrimeStone.Estudiantes.Api.Controllers.EstudianteController._estudianteAppService">
+            <summary>
+            Servicio de aplicacion para administracion estudiantes
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.EstudianteController.#ctor(PruebaPrimeStone.Estudiantes.Api.AplicationServices.EstudianteAppService,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="estudianteAppService"></param>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.EstudianteController.save(Common.DTOs.EstudianteDTO)">
+            <summary>
+            Crea o actualiza un estudiante
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.EstudianteController.Get">
+            <summary>
+            Obtiene una lista de estudiantes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.EstudianteController.Get(System.Int32)">
+            <summary>
+            Obtiene un estudiante por su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.EstudianteController.Cursos(System.Int32)">
+            <summary>
+            Obtiene un estudiante por su id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.EstudianteController.Matricular(Common.DTOs.EstudianteCursoDTO)">
+            <summary>
+            Matricula un estudiante en los cursos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.EstudianteController.Delete(System.Int32)">
+            <summary>
+            Elimina un estudiantes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.SessionController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="userAppService"></param>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.Controllers.SessionController.login">
+            <summary>
+            Valiad usuario y clave
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PruebaPrimeStone.Estudiantes.Api.DI.DependencyInjectionProfile">
+            <summary>
+            Inyeccion de dependencias
+            </summary>
+        </member>
+        <member name="M:PruebaPrimeStone.Estudiantes.Api.DI.DependencyInjectionProfile.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+    </members>
+</doc>
